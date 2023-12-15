@@ -116,4 +116,7 @@ function resetScore(){
         ties: 0
     };
     gameHistory = [];
+    // Call functions to update UI after reset
+    renderGameSummary();
+    renderGameHistory();
 }
