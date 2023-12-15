@@ -1,68 +1,75 @@
 body {
-    background-color: rgb(0, 0, 0);
+    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    padding: 20px;
+    margin: 0;
 }
 
 .Hero {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
-    margin-bottom: 50px;
-    
+    gap: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
 }
 
 .btn {
     border-radius: 50%;
-    background-color: black;
-    border-color: rgb(51, 236, 51);
-    margin-top: 30px;
+    background-color: #FFD700;
+    border: 5px solid #000; /* Reduced border width */
+    margin-top: 20px;
+    padding: 3px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.1); /* Enlarges the button on hover */
+    box-shadow: 0 0 10px 0 #FFD700; /* Adds a golden glow effect on hover */
 }
 
 .btn_img {
     border-radius: 50%;
-    width: 130px;
+    width: 100px; /* Adjusted image width */
 }
 
 .btn_reset_img {
+    
     border-radius: 50%;
-    width: 50px;
+    width: 40px; /* Adjusted reset button image width */
 }
-
 
 .Name {
     text-align: center;
-    color: chartreuse;
+    color: #FFD700;
     font-family: sans-serif;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 table {
-    color: rgb(129, 236, 48);
-    font-size: 30px;
+    color: #FFD700;
+    font-size: 24px; /* Adjusted font size */
     font-family: sans-serif;
-    border: solid;
+    border: 2px solid #FFD700; /* Reduced border width for table */
     box-sizing: content-box;
-    width:fit-content;
-    
-    
-
+    width: fit-content;
+    padding: 10px;
+    margin-top: 20px;
+    gap: 10px;
 }
 
 th {
-    font-size: 25px;
+    font-size: 20px; /* Adjusted font size for table headers */
     font-family: sans-serif;
-    height: 35px;
-    padding: 5px 12px;
+    height: 30px;
+    padding: 5px 10px;
     background-color: black;
-    border: solid;
-    margin:2px 10px;
-    
+    border: 2px solid #FFD700; /* Reduced border width for headers */
+    margin: 2px 5px;
 }
-td{
-    text-align: center;
 
+td {
+    text-align: center;
 }
